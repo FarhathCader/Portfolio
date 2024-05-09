@@ -6,7 +6,8 @@ const Contact = () => {
     const [name,setname] = useState('')
     
 
-    const handleEmail = () => {
+    const handleEmail = (e) => {
+    e.preventDefault();
     const subject = 'Contact Throguh Portfolio!';
     const mailtoLink = `mailto:farhathcader@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody+'\n\n' +name)}`;
     window.location.href = mailtoLink;
