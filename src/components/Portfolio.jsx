@@ -2,21 +2,13 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import trainTransport from "../assets/portfolio/Train-transportation.png";
 import studentRegistration from "../assets/portfolio/student-registration.png";
-import ticTacToe from "../assets/portfolio/tic-tac-toe.png";
-import bmiCurrency from "../assets/portfolio/BMI.png";
-import responsiveWeb from "../assets/portfolio/responsive.png";
-import ticketApp from "../assets/portfolio/ticket.png";
 import coding from "../assets/portfolio/coding.jpg";
 import food from "../assets/portfolio/food-ordering.jpeg";
 import portfolio from "../assets/portfolio/portfolio.png";
 import ml from "../assets/portfolio/ml.avif";
 import hostel from "../assets/portfolio/hostel.jpg";
 
-import wpfProject from "../assets/demos/WPF_project.mp4";
-import ticTacToeProject from "../assets/demos/tic-tac-toe.mp4";
-import bmiCurrencyProject from "../assets/demos/BMI-Currency.mp4";
-import responsiveWebProject from "../assets/demos/Responsive.mp4";
-import ticketAppProject from "../assets/demos/Ticketing-App.mp4";
+
 
 
 const Portfolio = () => {

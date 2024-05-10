@@ -13,7 +13,7 @@ const SocialLink = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/mmusharraf",
+      href: "https://www.linkedin.com/in/farhad-cader",
       style: "rounded-tr-md",
     },
     {
@@ -23,7 +23,7 @@ const SocialLink = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/mhdmusharraf",
+      href: "https://github.com/FarhathCader",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const SocialLink = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:mhdmusharraf.edu@gmail.com",
+      href: "mailto:farhathcader@gmail.com",
     },
    
   ];
@@ -40,21 +40,7 @@ const SocialLink = () => {
   return (
     <div className="lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
       <ul className="lg:hidden bg-gradient-to-b from-blue-950 via-blue-930 to-blue-950 p-4 overflow-y-auto">
-      <li
-        className={`flex justify-between items-center w-full h-14 px-4 mb-2 bg-blue-500 hover:bg-blue-600 rounded-md duration-300 rounded-br-md`}>
-          <a
-              href={cv}
-              className="flex justify-between items-center w-full text-white"
-              // download='CV_FARHAD'
-              target="_blank"
-              rel="noreferrer"
-            >
-                <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-            </a>
-      
-        </li>
+  
         {links.map((link) => (
           <li
             key={link.id}
@@ -71,11 +57,8 @@ const SocialLink = () => {
             </a>
           </li>
         ))}
-       
-      </ul>
-      <ul className="hidden lg:flex lg:flex-col">
-      <li
-        className= 'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-blue-500 hover:ml-[-10px] hover:rounded-md duration-300 rounded-br-md'>
+           <li
+        className={`flex justify-between items-center w-full h-14 px-4 mb-2 bg-blue-500 hover:bg-blue-600 rounded-md duration-300 rounded-br-md`}>
           <a
               href={cv}
               className="flex justify-between items-center w-full text-white"
@@ -89,6 +72,9 @@ const SocialLink = () => {
             </a>
       
         </li>
+      </ul>
+      <ul className="hidden lg:flex lg:flex-col">
+   
         {links.map((link) => (
           <li
             key={link.id}
@@ -105,6 +91,21 @@ const SocialLink = () => {
             </a>
           </li>
         ))}
+           <li
+        className= 'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-blue-500 hover:ml-[-10px] hover:rounded-md duration-300 rounded-br-md'>
+          <a
+              href={cv}
+              className="flex justify-between items-center w-full text-white"
+              // download='CV_FARHAD'
+              target="_blank"
+              rel="noreferrer"
+            >
+                <>
+          Resume <BsFillPersonLinesFill size={30} />
+        </>
+            </a>
+      
+        </li>
       </ul>
     </div>
   );
